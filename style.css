@@ -1,0 +1,74 @@
+body {
+  background-color: #799dbe;
+}
+
+.top-line-container {
+  position: absolute;
+  top: 25em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-line-container {
+  position: absolute;
+  top: 40em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-container {
+  position: absolute;
+  top: 45em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-container p {
+  color: white;
+  font-size: large;
+  letter-spacing: 2px;
+  float: left;
+  margin-left: 4em;
+}
+
+#about {
+  position: fixed;
+  top: 0.7em;
+  left: 4%;
+  transform: translate(-50%, -50%);
+}
+#skills {
+  position: fixed;
+  top: 0.7em;
+  left: 29%;
+  transform: translate(-50%, -50%);
+}
+#portfolio {
+  position: fixed;
+  top: 0.7em;
+  left: 54%;
+  transform: translate(-50%, -50%);
+}
+#contact {
+  position: fixed;
+  top: 0.7em;
+  left: 79%;
+  transform: translate(-50%, -50%);
+}
+
+.name-container {
+  position: absolute;
+  top: 30em;
+  left: 51%;
+  transform: translate(-50%, -50%);
+}
+
+#welcome {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  position: absolute;
+  letter-spacing: 2px;
+  top: 33em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
