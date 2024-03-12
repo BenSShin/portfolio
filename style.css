@@ -23,35 +23,38 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.box-container p {
+.box-container button {
   color: white;
   font-size: large;
   letter-spacing: 2px;
+  font-family: "Courier New", Courier, monospace;
   float: left;
   margin-left: 4em;
+  background: none;
+  border: none;
 }
 
-#about {
+#about-btn {
   position: fixed;
-  top: 0.7em;
+  top: 1.6em;
   left: 4%;
   transform: translate(-50%, -50%);
 }
-#skills {
+#skills-btn {
   position: fixed;
-  top: 0.7em;
+  top: 1.6em;
   left: 29%;
   transform: translate(-50%, -50%);
 }
-#portfolio {
+#portfolio-btn {
   position: fixed;
-  top: 0.7em;
+  top: 1.6em;
   left: 54%;
   transform: translate(-50%, -50%);
 }
-#contact {
+#contact-btn {
   position: fixed;
-  top: 0.7em;
+  top: 1.6em;
   left: 79%;
   transform: translate(-50%, -50%);
 }
@@ -71,4 +74,61 @@ body {
   top: 33em;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#about-container {
+  position: absolute;
+  width: 60vw;
+  height: 50vh;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+#skills-container {
+  position: absolute;
+  width: 60vw;
+  height: 50vh;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+#portfolio-container {
+  position: absolute;
+  width: 60vw;
+  height: 50vh;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+#contact-container {
+  position: absolute;
+  width: 60vw;
+  height: 50vh;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  background: none;
+  border: none;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
