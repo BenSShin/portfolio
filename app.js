@@ -18,22 +18,58 @@ document.addEventListener("DOMContentLoaded", function () {
     duration: 1000,
     delay: delayTime,
   });
+
+  anime
+    .timeline({
+      duration: 3000,
+      delay: delayTime,
+    })
+    .add({ targets: "#welcome", color: "rgba(255, 255, 255, 1)" }, 0)
+    .add({ targets: "#about-btn", color: "rgba(255, 255, 255, 1)" }, 0)
+    .add({ targets: "#skills-btn", color: "rgba(255, 255, 255, 1)" }, 0)
+    .add({ targets: "#portfolio-btn", color: "rgba(255, 255, 255, 1)" }, 0)
+    .add({ targets: "#contact-btn", color: "rgba(255, 255, 255, 1)" }, 0);
+
   var aboutModal = document.getElementById("about-container");
   var aboutBtn = document.getElementById("about-btn");
   var aboutClose = document.getElementById("about-close");
 
   aboutBtn.onclick = function () {
     aboutModal.style.display = "block";
+    anime
+      .timeline({
+        duration: 3000,
+      })
+      .add({ targets: "#welcome", color: "rgba(255, 255, 255, 0)" }, 0)
+      .add({ targets: "#about-btn", color: "rgba(255, 255, 255, 0)" }, 0)
+      .add({ targets: "#skills-btn", color: "rgba(255, 255, 255, 0)" }, 0)
+      .add({ targets: "#portfolio-btn", color: "rgba(255, 255, 255, 0)" }, 0)
+      .add({ targets: "#contact-btn", color: "rgba(255, 255, 255, 0)" }, 0);
+    anime({
+      targets: ".line",
+      opacity: 0,
+      duration: 600,
+      easing: "easeInOutQuad",
+    });
   };
 
   aboutClose.addEventListener("click", function () {
     aboutModal.style.display = "none";
-  });
-
-  window.addEventListener("click", function (event) {
-    if (event.target === aboutModal) {
-      aboutModal.style.display = "none";
-    }
+    anime
+      .timeline({
+        duration: 3000,
+      })
+      .add({ targets: "#welcome", color: "rgba(255, 255, 255, 1)" }, 0)
+      .add({ targets: "#about-btn", color: "rgba(255, 255, 255, 1)" }, 0)
+      .add({ targets: "#skills-btn", color: "rgba(255, 255, 255, 1)" }, 0)
+      .add({ targets: "#portfolio-btn", color: "rgba(255, 255, 255, 1)" }, 0)
+      .add({ targets: "#contact-btn", color: "rgba(255, 255, 255, 1)" }, 0);
+    anime({
+      targets: ".line",
+      opacity: 1,
+      duration: 600,
+      easing: "easeInOutQuad",
+    });
   });
 
   var skillsModal = document.getElementById("skills-container");
@@ -42,16 +78,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
   skillsBtn.onclick = function () {
     skillsModal.style.display = "block";
+    anime
+      .timeline({
+        duration: 3000,
+      })
+      .add({ targets: "#welcome", color: "rgba(255, 255, 255, 0)" }, 0)
+      .add({ targets: "#about-btn", color: "rgba(255, 255, 255, 0)" }, 0)
+      .add({ targets: "#skills-btn", color: "rgba(255, 255, 255, 0)" }, 0)
+      .add({ targets: "#portfolio-btn", color: "rgba(255, 255, 255, 0)" }, 0)
+      .add({ targets: "#contact-btn", color: "rgba(255, 255, 255, 0)" }, 0);
+    anime({
+      targets: ".line",
+      opacity: 0,
+      duration: 600,
+      easing: "easeInOutQuad",
+    });
   };
 
   skillsClose.addEventListener("click", function () {
     skillsModal.style.display = "none";
-  });
-
-  window.addEventListener("click", function (event) {
-    if (event.target === skillsModal) {
-      skillsModal.style.display = "none";
-    }
+    anime
+      .timeline({
+        duration: 3000,
+      })
+      .add({ targets: "#welcome", color: "rgba(255, 255, 255, 1)" }, 0)
+      .add({ targets: "#about-btn", color: "rgba(255, 255, 255, 1)" }, 0)
+      .add({ targets: "#skills-btn", color: "rgba(255, 255, 255, 1)" }, 0)
+      .add({ targets: "#portfolio-btn", color: "rgba(255, 255, 255, 1)" }, 0)
+      .add({ targets: "#contact-btn", color: "rgba(255, 255, 255, 1)" }, 0);
+    anime({
+      targets: ".line",
+      opacity: 1,
+      duration: 600,
+      easing: "easeInOutQuad",
+    });
   });
 
   var portfolioModal = document.getElementById("portfolio-container");
@@ -60,16 +120,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
   portfolioBtn.onclick = function () {
     portfolioModal.style.display = "block";
+    anime
+      .timeline({
+        duration: 3000,
+      })
+      .add({ targets: "#welcome", color: "rgba(255, 255, 255, 0)" }, 0)
+      .add({ targets: "#about-btn", color: "rgba(255, 255, 255, 0)" }, 0)
+      .add({ targets: "#skills-btn", color: "rgba(255, 255, 255, 0)" }, 0)
+      .add({ targets: "#portfolio-btn", color: "rgba(255, 255, 255, 0)" }, 0)
+      .add({ targets: "#contact-btn", color: "rgba(255, 255, 255, 0)" }, 0);
+    anime({
+      targets: ".line",
+      opacity: 0,
+      duration: 600,
+      easing: "easeInOutQuad",
+    });
   };
 
   portfolioClose.addEventListener("click", function () {
     portfolioModal.style.display = "none";
-  });
-
-  window.addEventListener("click", function (event) {
-    if (event.target === portfolioModal) {
-      portfolioModal.style.display = "none";
-    }
+    anime
+      .timeline({
+        duration: 3000,
+      })
+      .add({ targets: "#welcome", color: "rgba(255, 255, 255, 1)" }, 0)
+      .add({ targets: "#about-btn", color: "rgba(255, 255, 255, 1)" }, 0)
+      .add({ targets: "#skills-btn", color: "rgba(255, 255, 255, 1)" }, 0)
+      .add({ targets: "#portfolio-btn", color: "rgba(255, 255, 255, 1)" }, 0)
+      .add({ targets: "#contact-btn", color: "rgba(255, 255, 255, 1)" }, 0);
+    anime({
+      targets: ".line",
+      opacity: 1,
+      duration: 600,
+      easing: "easeInOutQuad",
+    });
   });
 
   var contactModal = document.getElementById("contact-container");
@@ -78,15 +162,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
   contactBtn.onclick = function () {
     contactModal.style.display = "block";
+    anime
+      .timeline({
+        duration: 3000,
+      })
+      .add({ targets: "#welcome", color: "rgba(255, 255, 255, 0)" }, 0)
+      .add({ targets: "#about-btn", color: "rgba(255, 255, 255, 0)" }, 0)
+      .add({ targets: "#skills-btn", color: "rgba(255, 255, 255, 0)" }, 0)
+      .add({ targets: "#portfolio-btn", color: "rgba(255, 255, 255, 0)" }, 0)
+      .add({ targets: "#contact-btn", color: "rgba(255, 255, 255, 0)" }, 0);
+    anime({
+      targets: ".line",
+      opacity: 0,
+      duration: 600,
+      easing: "easeInOutQuad",
+    });
   };
 
   contactClose.addEventListener("click", function () {
     contactModal.style.display = "none";
-  });
-
-  window.addEventListener("click", function (event) {
-    if (event.target === contactModal) {
-      contactModal.style.display = "none";
-    }
+    anime
+      .timeline({
+        duration: 3000,
+      })
+      .add({ targets: "#welcome", color: "rgba(255, 255, 255, 1)" }, 0)
+      .add({ targets: "#about-btn", color: "rgba(255, 255, 255, 1)" }, 0)
+      .add({ targets: "#skills-btn", color: "rgba(255, 255, 255, 1)" }, 0)
+      .add({ targets: "#portfolio-btn", color: "rgba(255, 255, 255, 1)" }, 0)
+      .add({ targets: "#contact-btn", color: "rgba(255, 255, 255, 1)" }, 0);
+    anime({
+      targets: ".line",
+      opacity: 1,
+      duration: 600,
+      easing: "easeInOutQuad",
+    });
   });
 });
