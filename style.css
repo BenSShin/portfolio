@@ -76,59 +76,71 @@ body {
   transform: translate(-50%, -50%);
 }
 
-#about-container {
+.container {
   position: absolute;
-  width: 60vw;
-  height: 50vh;
-  background-color: white;
+  width: 840px;
+  height: 600px;
+  background-color: rgba(27, 31, 34, 0.95);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
+  border-radius: 0.2em;
 }
-#skills-container {
-  position: absolute;
-  width: 60vw;
-  height: 50vh;
-  background-color: white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
+/* larger screen */
+@media screen and (min-width: 1680px) {
+  .container {
+    width: 1000px;
+    height: 600px;
+  }
 }
-#portfolio-container {
-  position: absolute;
-  width: 60vw;
-  height: 50vh;
-  background-color: white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-}
-#contact-container {
-  position: absolute;
-  width: 60vw;
-  height: 50vh;
-  background-color: white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
+/* smaller screen */
+@media screen and (max-width: 1679px) {
+  .container {
+    width: 700px;
+    height: 600px;
+  }
 }
 
-.close {
+.container button {
   color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  background: none;
   border: none;
+  background: none;
+  position: fixed;
+  font-size: 2em;
+  font-weight: bold;
+  right: 0.5em;
+  top: 0.5em;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 1em;
 }
 
-.close:hover,
-.close:focus {
+.container button:focus,
+.container button:hover {
   color: black;
   text-decoration: none;
   cursor: pointer;
+  background-color: #636363;
+  transition-duration: 300ms;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+  text-decoration-thickness: 1px;
+}
+
+.content {
+  margin: 4em;
+}
+.content p {
+  color: white;
+  font-size: 1.4em;
+  font-family: "Montserrat", sans-serif;
 }
