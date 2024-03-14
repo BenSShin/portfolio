@@ -1,26 +1,83 @@
 body {
   background-color: #799dbe;
 }
+@media screen and (min-height: 1080px) {
+  .top-line-container {
+    position: absolute;
+    top: 25em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-.top-line-container {
-  position: absolute;
-  top: 15em;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  .bottom-line-container {
+    position: absolute;
+    top: 40em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box-container {
+    position: absolute;
+    top: 45em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .name-container {
+    position: absolute;
+    top: 30em;
+    left: 51%;
+    transform: translate(-50%, -50%);
+  }
+
+  #welcome {
+    color: rgba(255, 255, 255, 0);
+    font-family: "Courier New", Courier, monospace;
+    position: absolute;
+    letter-spacing: 2px;
+    top: 33em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
-.bottom-line-container {
-  position: absolute;
-  top: 30em;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+@media screen and (max-height: 1079px) {
+  .top-line-container {
+    position: absolute;
+    top: 15em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-.box-container {
-  position: absolute;
-  top: 35em;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  .bottom-line-container {
+    position: absolute;
+    top: 30em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box-container {
+    position: absolute;
+    top: 35em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .name-container {
+    position: absolute;
+    top: 20em;
+    left: 51%;
+    transform: translate(-50%, -50%);
+  }
+
+  #welcome {
+    color: rgba(255, 255, 255, 0);
+    font-family: "Courier New", Courier, monospace;
+    position: absolute;
+    letter-spacing: 2px;
+    top: 23em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .box-container button {
@@ -56,23 +113,6 @@ body {
   position: fixed;
   top: 1.6em;
   left: 79%;
-  transform: translate(-50%, -50%);
-}
-
-.name-container {
-  position: absolute;
-  top: 20em;
-  left: 51%;
-  transform: translate(-50%, -50%);
-}
-
-#welcome {
-  color: rgba(255, 255, 255, 0);
-  font-family: "Courier New", Courier, monospace;
-  position: absolute;
-  letter-spacing: 2px;
-  top: 23em;
-  left: 50%;
   transform: translate(-50%, -50%);
 }
 

@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
         targets: "#about-container",
         opacity: 0,
         top: 590,
-        easing: "easeInBack",
+        easing: "easeInQuad",
       })
       .add({
         targets: "#about-container",
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .add({
         targets: "#skills-container",
         opacity: 0,
-        easing: "easeInBack",
+        easing: "easeInQuad",
         top: 600,
       })
       .add({
@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .add({
         targets: "#portfolio-container",
         opacity: 0,
-        easing: "easeInBack",
+        easing: "easeInQuad",
         top: 600,
       })
       .add({
@@ -204,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .add({
         targets: "#contact-container",
         opacity: 0,
-        easing: "easeInBack",
+        easing: "easeInQuad",
         top: 600,
       })
       .add({
