@@ -72,12 +72,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
   aboutBtn.onclick = function () {
     aboutModal.style.display = "block";
+    anime
+      .timeline({
+        duration: 800,
+        easing: "easeInBack",
+      })
+      .add({ targets: "#about-container", opacity: 0.95, top: 570 });
     homeFadeOut();
   };
 
   aboutClose.addEventListener("click", function () {
-    aboutModal.style.display = "none";
     homeFadeIn();
+    anime
+      .timeline({
+        duration: 200,
+      })
+      .add({
+        targets: "#about-container",
+        opacity: 0,
+        top: 590,
+        easing: "easeInBack",
+      })
+      .add({
+        targets: "#about-container",
+        duration: 0,
+        complete: function () {
+          setTimeout(function () {
+            document.getElementById("about-container").style.display = "none";
+          });
+        },
+      });
   });
 
   var skillsModal = document.getElementById("skills-container");
@@ -86,12 +110,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
   skillsBtn.onclick = function () {
     skillsModal.style.display = "block";
+    anime
+      .timeline({
+        duration: 800,
+        easing: "easeInBack",
+      })
+      .add({ targets: "#skills-container", opacity: 0.95, top: 570 });
     homeFadeOut();
   };
 
   skillsClose.addEventListener("click", function () {
-    skillsModal.style.display = "none";
     homeFadeIn();
+    anime
+      .timeline({
+        duration: 200,
+      })
+      .add({
+        targets: "#skills-container",
+        opacity: 0,
+        easing: "easeInBack",
+        top: 600,
+      })
+      .add({
+        targets: "#skills-container",
+        duration: 0,
+        complete: function () {
+          setTimeout(function () {
+            document.getElementById("skills-container").style.display = "none";
+          });
+        },
+      });
   });
 
   var portfolioModal = document.getElementById("portfolio-container");
@@ -101,11 +149,35 @@ document.addEventListener("DOMContentLoaded", function () {
   portfolioBtn.onclick = function () {
     portfolioModal.style.display = "block";
     homeFadeOut();
+    anime
+      .timeline({
+        duration: 800,
+        easing: "easeInBack",
+      })
+      .add({ targets: "#portfolio-container", opacity: 0.95, top: 570 });
   };
 
   portfolioClose.addEventListener("click", function () {
-    portfolioModal.style.display = "none";
     homeFadeIn();
+    anime
+      .timeline({
+        duration: 200,
+      })
+      .add({
+        targets: "#portfolio-container",
+        opacity: 0,
+        easing: "easeInBack",
+        top: 600,
+      })
+      .add({
+        targets: "#portfolio-container",
+        duration: 0,
+        complete: function () {
+          setTimeout(function () {
+            document.getElementById("portfolio-container").style.display = "none";
+          });
+        },
+      });
   });
 
   var contactModal = document.getElementById("contact-container");
@@ -115,10 +187,34 @@ document.addEventListener("DOMContentLoaded", function () {
   contactBtn.onclick = function () {
     contactModal.style.display = "block";
     homeFadeOut();
+    anime
+      .timeline({
+        duration: 800,
+        easing: "easeInBack",
+      })
+      .add({ targets: "#contact-container", opacity: 0.95, top: 570 });
   };
 
   contactClose.addEventListener("click", function () {
-    contactModal.style.display = "none";
     homeFadeIn();
+    anime
+      .timeline({
+        duration: 200,
+      })
+      .add({
+        targets: "#contact-container",
+        opacity: 0,
+        easing: "easeInBack",
+        top: 600,
+      })
+      .add({
+        targets: "#contact-container",
+        duration: 0,
+        complete: function () {
+          setTimeout(function () {
+            document.getElementById("contact-container").style.display = "none";
+          });
+        },
+      });
   });
 });

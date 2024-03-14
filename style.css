@@ -4,21 +4,21 @@ body {
 
 .top-line-container {
   position: absolute;
-  top: 25em;
+  top: 15em;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .bottom-line-container {
   position: absolute;
-  top: 40em;
+  top: 30em;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .box-container {
   position: absolute;
-  top: 45em;
+  top: 35em;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -61,7 +61,7 @@ body {
 
 .name-container {
   position: absolute;
-  top: 30em;
+  top: 20em;
   left: 51%;
   transform: translate(-50%, -50%);
 }
@@ -71,7 +71,7 @@ body {
   font-family: "Courier New", Courier, monospace;
   position: absolute;
   letter-spacing: 2px;
-  top: 33em;
+  top: 23em;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -80,13 +80,15 @@ body {
   position: absolute;
   width: 840px;
   height: 600px;
-  background-color: rgba(27, 31, 34, 0.95);
-  top: 50%;
+  background-color: rgb(27, 31, 34);
+  top: 590px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  opacity: 0;
   display: none;
+  transform: translate(-50%, -50%);
   border-radius: 0.2em;
 }
+
 /* larger screen */
 @media screen and (min-width: 1680px) {
   .container {
@@ -110,7 +112,7 @@ body {
   font-size: 2em;
   font-weight: bold;
   right: 0.5em;
-  top: 0.5em;
+  top: 1em;
   width: 1.5em;
   height: 1.5em;
   border-radius: 1em;
@@ -127,9 +129,9 @@ body {
 
 .title {
   font-size: 2.5em;
-  font-weight: 400;
+  font-weight: 100;
   letter-spacing: 2px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   color: white;
   text-decoration: underline;
   text-underline-offset: 0.3em;
@@ -139,8 +141,11 @@ body {
 .content {
   margin: 4em;
 }
+
 .content p {
   color: white;
   font-size: 1.4em;
-  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-family: "Source Sans 3", sans-serif;
 }
