@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .add({ targets: "#portfolio-btn", color: "rgba(255, 255, 255, 0)" }, 0)
       .add({ targets: "#contact-btn", color: "rgba(255, 255, 255, 0)" }, 0);
     anime({
-      targets: ".line",
+      targets: [".line", ".name-container"],
       opacity: 0,
       duration: 600,
       easing: "easeInOutQuad",
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .add({ targets: "#portfolio-btn", color: "rgba(255, 255, 255, 1)" }, 0)
       .add({ targets: "#contact-btn", color: "rgba(255, 255, 255, 1)" }, 0);
     anime({
-      targets: ".line",
+      targets: [".line", ".name-container"],
       opacity: 1,
       duration: 600,
       easing: "easeInOutQuad",
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
         duration: 800,
         easing: "easeInBack",
       })
-      .add({ targets: "#about-container", opacity: 0.95, top: 570 });
+      .add({ targets: "#about-container", opacity: 0.95, top: "48%" });
     homeFadeOut();
   };
 
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .add({
         targets: "#about-container",
         opacity: 0,
-        top: 590,
+        top: "50%",
         easing: "easeInQuad",
       })
       .add({
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
         duration: 800,
         easing: "easeInBack",
       })
-      .add({ targets: "#skills-container", opacity: 0.95, top: 570 });
+      .add({ targets: "#skills-container", opacity: 0.95, top: "48%" });
     homeFadeOut();
   };
 
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
         targets: "#skills-container",
         opacity: 0,
         easing: "easeInQuad",
-        top: 600,
+        top: "50%",
       })
       .add({
         targets: "#skills-container",
@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
         duration: 800,
         easing: "easeInBack",
       })
-      .add({ targets: "#portfolio-container", opacity: 0.95, top: 570 });
+      .add({ targets: "#portfolio-container", opacity: 0.95, top: "4%" });
   };
 
   portfolioClose.addEventListener("click", function () {
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
         targets: "#portfolio-container",
         opacity: 0,
         easing: "easeInQuad",
-        top: 600,
+        top: "5%",
       })
       .add({
         targets: "#portfolio-container",
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
         duration: 800,
         easing: "easeInBack",
       })
-      .add({ targets: "#contact-container", opacity: 0.95, top: 570 });
+      .add({ targets: "#contact-container", opacity: 0.95, top: "48%" });
   };
 
   contactClose.addEventListener("click", function () {
@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
         targets: "#contact-container",
         opacity: 0,
         easing: "easeInQuad",
-        top: 600,
+        top: "50%",
       })
       .add({
         targets: "#contact-container",

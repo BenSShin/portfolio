@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./fonts/Montserrat-Regular.ttf" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chathura:wght@100;300;400;700;800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Ben Shin</title>
   </head>
   <body>
@@ -147,24 +153,36 @@
     </section>
     <section id="portfolio-container" class="container">
       <button id="portfolio-close">&times;</button>
-      <div class="content">
+      <div class="content" id="portfolio-content">
         <h1 class="title">Projects</h1>
-        <p>portfolio</p>
+        <div class="project">
+          <h2 class="project-name">Realm-Roster</h2>
+          <p class="project-d">
+            Personally built a web app that allows users to create characters and groups to begin a Dungeons and Dragons
+            campaign. Realm Roster allows users to create an account, create a character, and interact with other users
+            that are in their group/party. Users are able to create characters which each can join or create a group
+            stored and managed in PostgreSQL. The backend was built using Ruby on Rails and the Frontend was built using
+            React.js and Tailwindcss.
+          </p>
+        </div>
       </div>
     </section>
     <section id="contact-container" class="container">
       <button id="contact-close">&times;</button>
       <div class="content">
         <h1 class="title">Contact Me</h1>
-        <p>contact</p>
+        <p>Feel free to contact me through email: ben.shin27@gmail.com</p>
+        <p>or through LinkedIn</p>
+        <div class="link-container">
+          <img id="linkedIn-logo" src="images/In-White-40.png" alt="image" />
+          <a class="link" href="www.linkedin.com/in/benjamin-shin" target="_blank">LinkedIn</a>
+        </div>
+        <div class="link-container">
+          <img id="git-logo" src="images/github-mark-white.png" alt="image" />
+          <a class="link" href="https://github.com/BenSShin" target="_blank">Github</a>
+        </div>
       </div>
     </section>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
-      integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <script src="assets/anime.min.js"></script>
     <script src="assets/app.js"></script>
   </body>
